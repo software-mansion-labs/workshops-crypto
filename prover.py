@@ -44,7 +44,7 @@ def test_cycle_challange(prover, hash_root):
 
     cycle_challange = prover.cycle_challange()
 
-    assert cycle_challange[0] == ([2,1], tree.generate_audit_path(3))
-    assert cycle_challange[1] == ([1,3], tree.generate_audit_path(14))
-    assert cycle_challange[2] == ([3,0], tree.generate_audit_path(9))
-    assert cycle_challange[3] == ([0,2], tree.generate_audit_path(4))
+    assert cycle_challange[0] == ([2,1], tree.generate_audit_path(9))
+    assert cycle_challange[1] == ([1,3], tree.generate_audit_path(7))
+    assert cycle_challange[2] == ([3,0], tree.generate_audit_path(12))
+    assert cycle_challange[3] == ([0,2], tree.generate_audit_path(2))
